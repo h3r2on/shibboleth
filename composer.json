@@ -1,0 +1,23 @@
+{
+    "name": "h3r2on/shibboleth",
+    "description": "A Laravel 5 package for Shibboleth SSO integration",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joel Herron",
+            "email": "herronj@gmail.com",
+						"role": "Developer"
+        }
+    ],
+		"require": {
+			"php": ">=5.5.9",
+			"illuminate/support": "5.1.* || 5.2.*",
+		},
+		"autoload": {
+			"psr-4": {
+				"H3r2on\\Shibboleth\\": "src"
+			}
+		},
+		"prefer-stable": true
+		"minimum-stability": "dev"
+}
