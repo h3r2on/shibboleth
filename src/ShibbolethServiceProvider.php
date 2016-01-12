@@ -39,6 +39,10 @@ class ShibbolethServiceProvider extends ServiceProvider
 			__DIR__ . '/../database/migrations/' => database_path('migrations')
 		], 'migrations');
 
+		$this->publishes([
+			__DIR__ . '/Models/' => app_path()
+		], 'models');
+
 		// load our package specific routes
 		if(! $this->app->routesAreCached()) {
 			require __DIR__ . '/Http/routes.php';

@@ -17,6 +17,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('first_name');
             $table->string('last_name');
+            $table->enum('type', array('shibboleth', 'local'))->default('shibboleth');
             $table->string('password', 60)->nullable()->default(null);
             $table->timestamps();
             $table->softDeletes();
